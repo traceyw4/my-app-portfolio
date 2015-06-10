@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+
+        >
+
+        <TextView
+            android:text="@string/title_bar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_weight="0"
+            android:layout_marginBottom="16dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/spotify"
+            android:background="#7E57C2"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/title"
+            android:id="@+id/spot"
+            android:layout_weight="1"
+            android:onClick="spotifyAction"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="#7E57C2"
+            android:text="@string/scores"
+            android:id="@+id/score"
+            android:layout_weight="1"
+            android:onClick="scoreAction"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/library"
+            android:layout_marginBottom="16dp"
+            android:background="#7E57C2"
+            android:id="@+id/library"
+            android:layout_weight="1"
+            android:onClick="libraryAction"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#7E57C2"
+            android:text="@string/build_it"
+            android:id="@+id/build"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="buildItAction"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#7E57C2"
+            android:text="@string/xyz_reader"
+            android:id="@+id/xyz"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="xyzAction"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#4527A0"
+            android:text="@string/capstone"
+            android:id="@+id/capstone"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:onClick="capstoneAction"
+
+
+        />
+    </LinearLayout>
+</RelativeLayout>
